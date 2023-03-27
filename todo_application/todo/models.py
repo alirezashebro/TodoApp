@@ -14,7 +14,7 @@ class Task(models.Model):
     description = models.TextField("شرح")
     state = models.CharField("وضعیت", max_length=30, choices=STATES, default="")
     creation_date = models.DateTimeField("تاریخ ایجاد", default=timezone.now)
-    do_date = models.DateField("آخرین بروز رسانی", blank=True, null=True)
+    do_date = models.DateField("تاریخ انجام", blank=True, null=True)
     last_modified = models.DateTimeField("آخرین بروز رسانی", blank=True, null=True)
 
     class Meta:

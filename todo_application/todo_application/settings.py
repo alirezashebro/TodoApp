@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "jalali_date",
     "todo.apps.TodoConfig",
+    "taggit",
 ]
 
 MIDDLEWARE = [

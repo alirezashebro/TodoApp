@@ -144,6 +144,9 @@ JALALI_DATE_DEFAULTS = {
     },
 }
 
+# Redirect to home URL after login (Default redirects to /accounts/profile/)
+LOGIN_REDIRECT_URL = '/'
+
 try:
     from todo_application.local_conf import *
 except ModuleNotFoundError:

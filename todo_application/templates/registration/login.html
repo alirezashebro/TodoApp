@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  {% load static %}
+  <head>
+  	<title>ورود</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="{% static 'login_form/css/style.css' %}">
+
+	</head>
+	<body>
+	<br><br>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-6 text-center mb-5">
+				<h2 class="heading-section">اپلیکیشن مدیریت تسک ها</h2>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-7 col-lg-5">
+				<div class="login-wrap p-4 p-md-5">
+			<div class="icon d-flex align-items-center justify-content-center">
+				<span class="fa fa-user-o"></span>
+			</div>
+			<h3 class="text-center mb-4">ورود به حساب کاربری</h3>
+					<form class="login-form" method="post" action="{% url 'login' %}">{% csrf_token %}
+					<!-- <form action="#" class="login-form"> -->
+				<div class="form-group">
+					<input dir="rtl" type="text" class="form-control rounded-left" placeholder="نام کاربری" required>
+				</div>
+			<div class="form-group d-flex">
+				<input dir="rtl" type="password" class="form-control rounded-left" placeholder="گذرواژه" required>
+			</div>
+			<div class="form-group">
+				<button type="submit" value="login" class="form-control btn btn-primary rounded submit px-3">ورود</button>
+				<input type="hidden" name="next" value="{{ next }}">
+			</div>
+			<div dir="rtl" class="form-group d-md-flex">
+				<div class="w-50 text-md-right">
+					<a href="{% url 'password_reset' %}">فراموشی گذرواژه</a>
+				</div>
+			</div>
+			{% if form.errors %}
+				<div dir="rtl" class="invalid-feedback">
+					<p>نام کاربری و گذرواژه صحیح نیست. لطفا مجدد تلاش کنید.</p>
+				</div>
+			{% endif %}
+			{% if next %}
+			{% if user.is_authenticated %}
+				<div dir="rtl" class="invalid-feedback">
+					<p>حساب کاربری شما به این صفحه دسترسی ندارد. برای ادامه، لطفا با یک حساب کاربری دارای دسترسی، وارد شوید.</p>
+				</div>
+				{% else %}
+				<div dir="rtl" class="invalid-feedback">
+					<p>برای مشاهده این صفحه وارد حساب کاربری شوید.</p>
+				</div>
+				{% endif %}
+			{% endif %}
+			</form>
+		</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+

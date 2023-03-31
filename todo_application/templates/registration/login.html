@@ -29,12 +29,11 @@
 			</div>
 			<h3 class="text-center mb-4">ورود به حساب کاربری</h3>
 					<form class="login-form" method="post" action="{% url 'login' %}">{% csrf_token %}
-					<!-- <form action="#" class="login-form"> -->
 				<div class="form-group">
-					<input dir="rtl" type="text" class="form-control rounded-left" placeholder="نام کاربری" required>
+					<input dir="rtl" type="text" name="username" class="form-control rounded-left" placeholder="نام کاربری" required>
 				</div>
 			<div class="form-group d-flex">
-				<input dir="rtl" type="password" class="form-control rounded-left" placeholder="گذرواژه" required>
+				<input dir="rtl" type="password" name="password" class="form-control rounded-left" placeholder="گذرواژه" required>
 			</div>
 			<div class="form-group">
 				<button type="submit" value="login" class="form-control btn btn-primary rounded submit px-3">ورود</button>

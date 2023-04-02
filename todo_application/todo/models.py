@@ -14,9 +14,9 @@ class Task(models.Model):
     title = models.CharField("عنوان", max_length=200)
     description = models.TextField("شرح")
     state = models.CharField("وضعیت", max_length=30, choices=STATES, default="")
-    creation_date = models.DateTimeField("تاریخ ایجاد", default=timezone.now)
+    creation_date = models.DateTimeField("تاریخ ایجاد", auto_now_add=True)
     due_date = models.DateField("تاریخ انجام", blank=True, null=True)
-    last_modified = models.DateTimeField("آخرین بروز رسانی", blank=True, null=True)
+    last_modified = models.DateTimeField("آخرین بروز رسانی", auto_now=True, blank=True, null=True)
     tags = TaggableManager()
 
     class Meta:

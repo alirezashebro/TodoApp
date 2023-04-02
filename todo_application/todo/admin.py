@@ -11,7 +11,7 @@ TaggitAppConfig.verbose_name = 'مدیریت برچسب ها'
 
 @admin.register(Task)
 class TaskModelAdmin(ModelAdminJalaliMixin, admin.ModelAdmin):
-    list_display = ['creator', 'title', 'description', 'state', 'creation_date_jalali', 'due_date_jalali', 'tag_list', 'last_modified_jalali']
+    list_display = ['creator', 'title', 'description', 'state', 'creation_date_jalali', 'due_date_jalali', 'tag_list', 'last_modified_jalali', 'is_active']
 
     formfield_overrides = {
         models.TextField: {'widget': Textarea(attrs={'rows':4, 'cols':35})},

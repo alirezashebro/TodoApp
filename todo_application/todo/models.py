@@ -18,7 +18,7 @@ class Task(models.Model):
     due_date = models.DateField("تاریخ انجام", blank=True, null=True)
     last_modified = models.DateTimeField("آخرین بروز رسانی", auto_now=True, blank=True, null=True)
     tags = TaggableManager()
-    is_disabled = models.BooleanField("غیرفعال شده", default=False)
+    is_active = models.BooleanField("فعال", default=True)
 
     class Meta:
         verbose_name = "تسک"

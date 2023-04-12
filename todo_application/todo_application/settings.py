@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-@%abb%jpjw%m+6&8d6(28ms#8wtk-_ivt#3)x5o1=18&^en-e#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -145,7 +145,7 @@ JALALI_DATE_DEFAULTS = {
 }
 
 # Redirect to home URL after login (Default redirects to /accounts/profile/)
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/todo/my_todo'
 
 TAGGIT_CASE_INSENSITIVE = True
 

@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Shabnam";
+    src: local("Shabnam"),
+     url('../../../admin/fonts/Shabnam.eot'),
+     url('../../../admin/fonts/Shabnam.eot?#iefix') format('embedded-opentype'),
+     url('../../../admin/fonts/Shabnam.woff2') format('woff2'),
+     url('../../../admin/fonts/Shabnam.woff') format('woff'),
+     url('../../../admin/fonts/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "Shabnam";
+    src: local("Shabnam"),
+     url('../../../admin/fonts/Shabnam-Bold.eot'),
+     url('../../../admin/fonts/Shabnam-Bold.eot?#iefix') format('embedded-opentype'),
+     url('../../../admin/fonts/Shabnam-Bold.woff2') format('woff2'),
+     url('../../../admin/fonts/Shabnam-Bold.woff') format('woff'),
+     url('../../../admin/fonts/Shabnam-Bold.ttf') format('truetype');
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: "Shabnam";
+    src: local("Shabnam"),
+     url('../../../admin/fonts/Shabnam-Thin.eot'),
+     url('../../../admin/fonts/Shabnam-Thin.eot?#iefix') format('embedded-opentype'),
+     url('../../../admin/fonts/Shabnam-Thin.woff2') format('woff2'),
+     url('../../../admin/fonts/Shabnam-Thin.woff') format('woff'),
+     url('../../../admin/fonts/Shabnam-Thin.ttf') format('truetype');
+    font-weight: 100;
+  }
+  
+  @font-face {
+    font-family: "Shabnam";
+    src: local("Shabnam"),
+     url('../../../admin/fonts/Shabnam-Light.eot'),
+     url('../../../admin/fonts/Shabnam-Light.eot?#iefix') format('embedded-opentype'),
+     url('../../../admin/fonts/Shabnam-Light.woff2') format('woff2'),
+     url('../../../admin/fonts/Shabnam-Light.woff') format('woff'),
+     url('../../../admin/fonts/Shabnam-Light.ttf') format('truetype');
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: "Shabnam";
+    src: local("Shabnam"),
+     url('../../../admin/fonts/Shabnam-Medium.eot'),
+     url('../../../admin/fonts/Shabnam-Medium.eot?#iefix') format('embedded-opentype'),
+     url('../../../admin/fonts/Shabnam-Medium.woff2') format('woff2'),
+     url('../../../admin/fonts/Shabnam-Medium.woff') format('woff'),
+     url('../../../admin/fonts/Shabnam-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+  
